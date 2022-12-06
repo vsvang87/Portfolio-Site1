@@ -4,164 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Portfolio Webiste</title>
+    <title>Portfolio Website</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="index.html" class="logo">V.V</a>
-          <!--Nav Links-->
-          <ul class="nav-links">
-            <li class="nav-item"><a href="projects.html">Mini Projects</a></li>
-            <li class="nav-item"><a href="clonesites.html">Clone Sites</a></li>
-            <li class="nav-item"><a href="htmlemail.html">HTML Email</a></li>
-            <li class="nav-item"><a href="about.html">About</a></li>
-          </ul>
-        </nav>
-        <!--Introduction-->
-        <div class="main-content-container">
-          <div class="main-intro main-col">
-            <p class="title">Hi, <span class="text-orange"> I'm Visay</span></p>
-            <p class="text-small">I am a frontend developer</p>
-            <p class="text-small">I love to learn, create and build.</p>
-          </div>
-          <div class="main-content-img main-col">
-            <img
-              class="designer-desk"
-              src="/images/designer-desk.svg"
-              alt="desk"
-            />
-          </div>
+      <nav class="vertical-nav">
+        <div class="img-desc">
+          <img src="/images/img-me.jpg" alt="" />
+        </div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+
+      <div class="center-div">
+        <div class="intro-content">
+          <h1>Visay Vang</h1>
+          <p>HTML Email / Web Developer</p>
+          <p>Ready to work</p>
+          <button class="btn">Hire Me!</button>
         </div>
       </div>
     </header>
-    <!--Main-->
     <main>
-      <div class="container">
-        <div class="about-container">
-          <div class="about-me-img-container about-col">
-            <img
-              class="about-me-img"
-              src="/images/streamline-work.svg"
-              alt="work from home image"
-            />
-          </div>
-          <div class="about-me-summary about-col">
-            <p class="subtitle about-me-title">About Me</p>
-            <p>
-              My name is Visay Vang. I am a web developer from the Greenville,
-              Sc area. I discovered code back in 2021 and fell in love with it.
-              I am ready to make this jump into the tech industry.
-            </p>
-            <a href="about.html"
-              ><button class="about-me-btn">Read More</button></a
-            >
+      <section class="sect-1 about-me">
+        <div class="width-margin-container">
+          <h1>About Me</h1>
+          <div class="about-me-grid">
+            <div class="grid-col-img img">
+              <img src="/images/img-me.jpg" alt="" />
+            </div>
+            <div class="grid-col-desc">
+              <p>
+                I'm Visay a html email and frontend developer based in the
+                Anderson, SC area. I came across code 1 year ago and fell in
+                love with it. I am ready to make this jump into the tech
+                industry.
+              </p>
+              <button class="btn">Read More...</button>
+            </div>
+            <div class="grid-col-contact">
+              <p>Age: 35</p>
+              <p>Married: Yes</p>
+              <p>Children: Yes</p>
+              <p>Email: vsvang@gmail.com</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!--Skills Sect-->
+      <section class="sect-2">
+        <div class="width-margin-container">
+          <h1>Skills</h1>
+          <div class="skills-container">
+            <div class="skill-content">HTML</div>
+            <div class="skill-content">CSS</div>
+            <div class="skill-content">Sass</div>
+            <div class="skill-content">JavaScript</div>
+            <div class="skill-content">Git</div>
+            <div class="skill-content">Figma</div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!--Skills-->
-    <section class="skill-section">
-      <div class="container">
-        <p class="subtitle skills-title">Skills</p>
-        <div class="skill-container">
-          <div class="skill-content col col-1">
-            <img class="skill-img" src="/images/html5.svg" alt="HTML" />
-            <p>HTML</p>
-          </div>
-          <div class="skill-content col col-2">
-            <img class="skill-img" src="/images/css.svg" alt="CSS" />
-            <p>CSS</p>
-          </div>
-          <div class="skill-content col col-3">
-            <img
-              class="skill-img"
-              src="/images/javascript.svg"
-              alt="Javascript"
-            />
-            <p>JavaScript</p>
-          </div>
-          <div class="skill-content col col-4">
-            <img
-              class="skill-img"
-              src="/images/bootstrap.svg"
-              alt="Bootstrap"
-            />
-            <p>Bootstrap</p>
-          </div>
-          <div class="skill-content col col-5">
-            <img class="skill-img" src="/images/github.svg" alt="Github" />
-            <p>Github</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Projects-->
-    <section class="project-section section">
-      <div class="container">
-        <p class="subtitle">Projects</p>
-        <div class="project-container">
-          <!--Clone Sites-->
-          <div class="clone-site project-col col-1">
-            <a class="project-link" href="clonesites.html">
-              <div class="background clone inner-col box-1">
-                <p class="project-title">Clone Sites</p>
-              </div>
-              <div class="clone-site-list inner-col box-2">
-                <p class="list">Tesla</p>
-                <p>Apple</p>
-                <p>Mailchimp</p>
-                <p>Nike</p>
-              </div>
-            </a>
-          </div>
-          <!--HTML Email-->
-          <div class="html-email project-col col-2">
-            <a class="project-link" href="htmlemail.html">
-              <div class="background html inner-col box-3">
-                <p class="project-title">HTML Email</p>
-              </div>
-              <div class="html-email-list inner-col box-4">
-                <p class="list">Transactional</p>
-                <p>Landing Page</p>
-                <p>Promotional</p>
-              </div>
-            </a>
-          </div>
-          <!--Mini Projects-->
-          <div class="mini-projects project-col col-3">
-            <a class="project-link" href="projects.html">
-              <div class="background mini inner-col box-5">
-                <p class="project-title">Mini Projects</p>
-              </div>
-              <div class="mini-projects-list inner-col box-6">
-                <p class="list">Calculator</p>
-                <p>Dice Game</p>
-                <p>To Do List</p>
-                <p>Form Validation</p>
-                <p>Blackjack Game</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Footer-->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <p class="subtitle contact-me">Contact Me</p>
-          <p class="text-small">Phone: 414-243-4862</p>
-          <p class="text-small">Email: vsvang@gmail.com</p>
-          <a class="text-small" href="https://www.linkedin.com/feed/"
-            >Linkedin Profile</a
-          >
-        </div>
-      </div>
-    </footer>
     <script src="/js/index.js"></script>
   </body>
 </html>

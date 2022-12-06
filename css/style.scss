@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$colorBLue: #0c7e7a;
+$colorOrange: #ff752b;
+$colorGray: #D3D3D3;
+$colorOffWhite: #FAF9F6;
+$colorOffBlack: #36454F;
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    width: 50%;
+    margin-inline: auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(/images/pexels-oleksandr-pidvalnyi-1227513.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    .img-desc{
+        img{
+            width: 60px;
+            height: 60px;
+            clip-path: circle();
+        }
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 10%;
+        min-height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        padding: 5rem 0;
+        align-items: center;
+        flex-direction: column;
+        background: $colorOffBlack;
+        ul{
+            margin-top: 2.5rem;
+            width: 100%;
+           li{
+            list-style-type: none;
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            transition: 0.15s ease-in-out;
+            &:hover{
+                background-color: $colorOrange;
+            }
+            a{
+                text-decoration: none;
+                color: $colorOffWhite;
+            }
+           }
+        }
+    }
+   .center-div{
+    width: 50%;
+    margin-inline: auto;
+   }
+    .intro-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        h1{
+            font-size: 3rem;
+            color: $colorOrange;
+            font-weight: 800;
+        }
+        p{
+            padding: 0.5rem 0;
+            color: $colorOffBlack;
+            font-weight: 700;
+        }
+        .btn{
+            padding: 0.3rem .7rem;
+            border: none;
+            border-radius: 2px;
+            background: $colorBLue;
+            color: $colorOffWhite;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.15s ease;
+            &:hover{
+                background: $colorOrange;
+            }
+        }
+    }
+}
+/* Section 1*/
+.sect-1{
+    min-height: 100vh;
+    background: $colorOffWhite;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    .width-margin-container{
+        width: 75%;
+        margin-inline: auto;
+    }
+    .about-me-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5rem;
+        .img{
+            img{
+                width: 100%;
+                height: 100%;
+                border: 2px solid $colorOrange;
+            }
+        }
+        .grid-col-img{
+            grid-row: 1 / 3;
+        }
+        .grid-col-desc{
+            h1{
+                color: $colorOffBlack;
+            }
+        }
+    }
+}
+/* Skills Section */
+.sect-2{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
